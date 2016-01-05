@@ -1,0 +1,12 @@
+symfony:
+    build: . 
+    links:
+       - mysql
+    ports:
+       - "8000:80"
+    volumes:
+       - .:/var/app
+mysql:
+    image: mysql:5.6
+    environment:
+       - MYSQL_ROOT_PASSWORD=R0b0c0p007

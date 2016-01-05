@@ -1,0 +1,6 @@
+# codeship-steps.yml
+- type: parallel
+service: symfony
+steps:
+  - command: phpunit src/
+  - command: vendors/phpspec/phpspec run
